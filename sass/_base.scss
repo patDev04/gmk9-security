@@ -1,0 +1,106 @@
+@import "./Variables.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Graduate&family=Red+Hat+Display:wght@300;400;500;700;900&display=swap");
+
+*,
+*::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 2vmin;
+  scroll-behavior: smooth;
+  font-family: "Montserrat", sans-serif;
+  background-color: $background;
+  color: white;
+  @include breakpoint(mobile-landscape) {
+    font-size: 2.3vmin;
+  }
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+picture {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.page-header {
+  font-weight: 300;
+  text-align: center;
+  font-size: 3rem;
+  margin: 2rem 0;
+  @include breakpoint(mobile-landscape) {
+    margin: 0;
+  }
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+  margin: 0 12rem;
+
+  @include breakpoint(tablet-landscape) {
+    margin: 0 8rem;
+  }
+  @include breakpoint(tablet-portrait) {
+    margin: 0 6rem;
+  }
+  @include breakpoint(mobile-landscape) {
+    margin: 0 2rem;
+  }
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  height: 70vh;
+  width: 100%;
+  z-index: -1;
+  background-image: url("../img/Black-with-white-abstract-seamless-pattern-vector-set-04.jpg");
+  background-attachment: fixed;
+  background-size: contain;
+  opacity: 0.04;
+
+  @include breakpoint(tablet-landscape) {
+    height: 85vh;
+  }
+
+  @include breakpoint(tablet-portrait) {
+    height: 75vh;
+  }
+
+  @include breakpoint(mobile-landscape) {
+    height: 60vh;
+  }
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}

@@ -1,0 +1,59 @@
+@import "./variables";
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  width: 25rem;
+}
+.value {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  margin-bottom: 18rem;
+  @include breakpoint(mobile-landscape) {
+    display: block;
+  }
+
+  &-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include breakpoint(mobile-landscape) {
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      color: $main;
+      margin: 0.5rem 0;
+    }
+  }
+  &-icon {
+    width: 3rem;
+  }
+}
+
+.about-box {
+  margin: 0 auto;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 24rem;
+  @include breakpoint(mobile-landscape) {
+    width: 100%;
+  }
+}
+
+.about-text {
+  font-size: 1.3rem;
+}
+
+.read-more-btn {
+  font-size: 1.2rem;
+  margin: 2rem 0;
+  color: $main;
+}

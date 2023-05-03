@@ -1,0 +1,93 @@
+@import "./variables";
+
+.about {
+  margin-top: 5rem;
+  @include breakpoint(mobile-landscape) {
+    margin-top: 0;
+  }
+
+  &-quote-container {
+    margin: 6rem 0;
+  }
+
+  &-quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-quote {
+    font-weight: 900;
+    font-size: 1.5rem;
+    font-family: "Graduate", sans-serif;
+    display: inline;
+    color: $main;
+    text-shadow: rgb(0, 0, 0) 1px 1px 15px;
+    box-shadow: inset 0 -0.5em 0 #2b4750;
+  }
+
+  &-para {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.3rem;
+    width: 80%;
+    @include breakpoint(tablet-portrait) {
+      width: 100%;
+    }
+  }
+
+  &-vision-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 8rem 0;
+    gap: 2rem;
+
+    @include breakpoint(mobile-landscape) {
+      display: block;
+    }
+  }
+
+  &-col {
+    background-color: #006a8a;
+    padding: 2rem;
+    color: white;
+    h1 {
+      margin-bottom: 1rem;
+    }
+    p {
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+  }
+
+  &-col:nth-child(1) {
+    background-color: whitesmoke;
+    color: black;
+  }
+
+  &-info {
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+
+  &-img-container {
+    margin: 8rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    @include breakpoint(tablet-landscape) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &-img {
+    width: 25%;
+    height: 20rem;
+
+    @include breakpoint(tablet-landscape) {
+      width: 100%;
+      object-position: top;
+    }
+  }
+}
