@@ -8,14 +8,16 @@
 }
 
 .logo {
-  width: 40rem;
+  width: 75vmin;
+  position: relative;
+  top: 5rem;
 }
 .value {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
   margin-bottom: 29rem;
-  @include breakpoint(mobile-landscape) {
+  @include breakpoint(tablet-portrait) {
     display: block;
   }
 
@@ -60,5 +62,5 @@
   font-size: 1.6rem;
   margin: 2rem 0;
   color: $main;
-  text-decoration: underline;
+  text-transform: uppercase;
 }
