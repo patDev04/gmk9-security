@@ -18,7 +18,7 @@
 }
 .about-quote {
   font-weight: 900;
-  font-size: 1.5rem;
+  font-size: 2.2rem;
   font-family: "Graduate", sans-serif;
   display: inline;
   color: #46d2fd;
@@ -28,7 +28,7 @@
 .about-para {
   margin: 2rem 0;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
   width: 80%;
 }
 @media (max-width: 768px) {
@@ -49,14 +49,15 @@
 }
 .about-col {
   background-color: #006a8a;
-  padding: 2rem;
+  padding: 3rem;
   color: white;
 }
 .about-col h1 {
   margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 .about-col p {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 500;
 }
 .about-col:nth-child(1) {
@@ -64,7 +65,7 @@
   color: black;
 }
 .about-info {
-  font-size: 1.4rem;
+  font-size: 2rem;
   font-weight: 600;
 }
 .about-img-container {
@@ -81,12 +82,12 @@
 }
 .about-img {
   width: 25%;
-  height: 20rem;
+  height: 30rem;
+  object-position: top;
 }
 @media (max-width: 992px) {
   .about-img {
     width: 100%;
-    object-position: top;
   }
 }
 
@@ -99,16 +100,11 @@
 }
 
 html {
-  font-size: 2vmin;
+  font-size: 62.5%;
   scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
   background-color: #171717;
   color: white;
-}
-@media (max-width: 480px) {
-  html {
-    font-size: 2.3vmin;
-  }
 }
 
 body {
@@ -137,7 +133,7 @@ a {
 .page-header {
   font-weight: 300;
   text-align: center;
-  font-size: 3rem;
+  font-size: 4rem;
   margin: 2rem 0;
 }
 @media (max-width: 480px) {
@@ -207,18 +203,18 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
 }
 
 .logo {
-  width: 25rem;
+  width: 40rem;
 }
 
 .value {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
-  margin-bottom: 18rem;
+  margin-bottom: 29rem;
 }
 @media (max-width: 480px) {
   .value {
@@ -236,19 +232,23 @@ button {
     margin-bottom: 2rem;
   }
 }
-.value-card h3 {
-  color: #46d2fd;
+.value-card h1 {
+  font-size: 1.8rem;
   margin: 0.5rem 0;
+  color: #46d2fd;
+}
+.value-card p {
+  font-size: 1.5rem;
 }
 .value-icon {
-  width: 3rem;
+  width: 4rem;
 }
 
 .about-box {
   margin: 0 auto;
   width: 70%;
   text-align: center;
-  margin-bottom: 24rem;
+  margin-bottom: 28rem;
 }
 @media (max-width: 480px) {
   .about-box {
@@ -257,13 +257,14 @@ button {
 }
 
 .about-text {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .read-more-btn {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin: 2rem 0;
   color: #46d2fd;
+  text-decoration: underline;
 }
 
 nav {
@@ -274,7 +275,7 @@ nav {
 
 .nav-link {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   cursor: pointer;
   transition: ease 0.3s;
