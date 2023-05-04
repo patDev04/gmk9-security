@@ -18,9 +18,10 @@ html {
   font-family: "Montserrat", sans-serif;
   background-color: $background;
   color: white;
-  // @include breakpoint(mobile-landscape) {
-  //   font-size: 62.5%;
-  // }
+
+  @include breakpoint(tablet-landscape) {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -69,7 +70,7 @@ main {
     margin: 0 8rem;
   }
   @include breakpoint(tablet-portrait) {
-    margin: 0 6rem;
+    margin: 0 4rem;
   }
   @include breakpoint(mobile-landscape) {
     margin: 0 2rem;
@@ -86,20 +87,7 @@ main {
   background-attachment: fixed;
   background-size: contain;
   opacity: 0.04;
-
-  @include breakpoint(tablet-landscape) {
-    height: 85vh;
-  }
-
-  @include breakpoint(tablet-portrait) {
-    height: 75vh;
-  }
-
-  @include breakpoint(mobile-landscape) {
-    height: 60vh;
-  }
 }
-
 button {
   background-color: transparent;
   border: none;
