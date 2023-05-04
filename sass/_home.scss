@@ -4,17 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 85vh;
 }
 
 .logo {
-  width: 25rem;
+  width: 40rem;
 }
 .value {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
-  margin-bottom: 18rem;
+  margin-bottom: 29rem;
   @include breakpoint(mobile-landscape) {
     display: block;
   }
@@ -28,13 +28,17 @@
       margin-bottom: 2rem;
     }
 
-    h3 {
-      color: $main;
+    h1 {
+      font-size: 1.8rem;
       margin: 0.5rem 0;
+      color: $main;
+    }
+    p {
+      font-size: 1.5rem;
     }
   }
   &-icon {
-    width: 3rem;
+    width: 4rem;
   }
 }
 
@@ -42,18 +46,19 @@
   margin: 0 auto;
   width: 70%;
   text-align: center;
-  margin-bottom: 24rem;
+  margin-bottom: 28rem;
   @include breakpoint(mobile-landscape) {
     width: 100%;
   }
 }
 
 .about-text {
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 .read-more-btn {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
   margin: 2rem 0;
   color: $main;
+  text-decoration: underline;
 }

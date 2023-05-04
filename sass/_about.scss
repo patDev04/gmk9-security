@@ -18,7 +18,7 @@
 
   &-quote {
     font-weight: 900;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-family: "Graduate", sans-serif;
     display: inline;
     color: $main;
@@ -29,7 +29,7 @@
   &-para {
     margin: 2rem 0;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     width: 80%;
     @include breakpoint(tablet-portrait) {
       width: 100%;
@@ -49,13 +49,14 @@
 
   &-col {
     background-color: #006a8a;
-    padding: 2rem;
+    padding: 3rem;
     color: white;
     h1 {
       margin-bottom: 1rem;
+      font-size: 2.5rem;
     }
     p {
-      font-size: 1.4rem;
+      font-size: 2rem;
       font-weight: 500;
     }
   }
@@ -66,7 +67,7 @@
   }
 
   &-info {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 600;
   }
 
@@ -83,11 +84,11 @@
 
   &-img {
     width: 25%;
-    height: 20rem;
+    height: 30rem;
+    object-position: top;
 
     @include breakpoint(tablet-landscape) {
       width: 100%;
-      object-position: top;
     }
   }
 }
